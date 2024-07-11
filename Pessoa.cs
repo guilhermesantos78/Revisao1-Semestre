@@ -11,7 +11,8 @@ namespace Revisao
         public string nome { get; set; }
         public bool Contatar()
         {
-            bool verify = false;
+            bool verify = true;
+            Console.WriteLine("Usuario Contatado com sucesso");
             return verify;
         }
     }
