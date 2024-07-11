@@ -9,8 +9,12 @@ namespace Revisao
     public class Funcionario : Pessoa 
     {
         private int Matricula { get; set; }
-        public string placaVeiculo { get; set; }
+        private string placaVeiculo { get; set; }
 
+        public Funcionario()
+        {
+            placaVeiculo = "FFFFFFF";
+        }
         public bool verificarVeiculo(Automovel automovel)
         {
             if (placaVeiculo.Length ==  7)
